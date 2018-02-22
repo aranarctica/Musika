@@ -4,6 +4,6 @@ package vista;
  * @author Xabi
  *
  */
-public class VistaContratan {
+public class ContratanVista {
 
 }
