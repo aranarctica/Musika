@@ -8,31 +8,25 @@ package modelo;
 public class Contratan {
 
 	private int id;
-	private int idTaldeak;
-	private int idUsuarios;
-
+	private Taldeak taldeak;
+	private Usuarios usuarios;
 	public int getId() {
 		return id;
 	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	public int getTaldeak() {
-		return idTaldeak;
+	public Taldeak getTaldeak() {
+		return taldeak;
 	}
-
-	public void setTaldeak(int i) {
-		this.idTaldeak = i;
+	public void setTaldeak(Taldeak taldeak) {
+		this.taldeak = taldeak;
 	}
-
-	public int getUsuarios() {
-		return idUsuarios;
+	public Usuarios getUsuarios() {
+		return usuarios;
 	}
-
-	public void setUsuarios(int i) {
-		this.idUsuarios = i;
+	public void setUsuarios(Usuarios usuarios) {
+		this.usuarios = usuarios;
 	}
-
 }
+	

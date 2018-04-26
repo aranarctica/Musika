@@ -11,6 +11,9 @@ public class Taldeak {
 	private String nombre;
 	private String componentes;
 	private String estilo;
+	private ArrayList<Contratan> contrata;
+
+	
 
 	public int getId() {
 		return id;
@@ -52,5 +55,4 @@ public class Taldeak {
 		this.contrata = contrata;
 	}
 
-	private ArrayList<Contratan> contrata;
 }

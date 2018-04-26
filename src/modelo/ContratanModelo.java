@@ -25,9 +25,6 @@ public class ContratanModelo extends Conector {
 			while (rs.next()) {
 				contratan = new Contratan();
 				contratan.setId(rs.getInt("id"));
-				contratan.setTaldeak(rs.getInt("id"));
-				contratan.setUsuarios(rs.getInt("id"));
-
 				contrata.addAll(contrata);
 			}
 			return contrata;
@@ -41,8 +38,7 @@ public class ContratanModelo extends Conector {
 	public void insertar(Contratan contratan) {
 		try {
 			PreparedStatement pst = super.conexion.prepareStatement("insert into contratan(idUsuarios, idTaldeak)");
-			pst.setInt(1, contratan.getUsuarios());
-			pst.setInt(2, contratan.getTaldeak());
+			
 			pst.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -53,9 +49,7 @@ public class ContratanModelo extends Conector {
 	public void update(Contratan contratan) {
 		try {
 			PreparedStatement pst = super.conexion.prepareStatement("update contratan set idUsuarios, idTaldeak");
-			pst.setInt(1, contratan.getUsuarios());
-			pst.setInt(2, contratan.getTaldeak());
-
+			
 			pst.executeUpdate();
 
 		} catch (SQLException e) {

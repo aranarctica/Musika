@@ -29,10 +29,13 @@ public class VistaGeneral {
 			
 			switch(opcion){
 			case GESTIONAR_GRUPOS:
+			taldeakVista.menuDeGrupos();
 				break;
 			case GESTIONAR_USUARIOS:
+				usuariosVista.menuDeUsuarios();
 				break;
 			case GESTIONAR_CONTRATACIONES:
+				
 				break;
 			default:
 				break;
